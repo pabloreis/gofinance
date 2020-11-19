@@ -30,6 +30,20 @@ export const Container = styled.div<ContainerProps>`
         &:hover {
           opacity: 0.6;
         }
+
+        &.navbar__link--active {
+          position: relative;
+
+          &::after {
+            content: ' ';
+            width: 100%;
+            height: 2px;
+            background: #ff872c;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+          }
+        }
       }
     }
   }
